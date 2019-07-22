@@ -1,0 +1,53 @@
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+div.card {
+	background-color: #879823;
+	color:#ffffff;
+	height: 500px;
+	width: 470px;
+	display: inline-block;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+    text-align: center ;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	overflow: hidden;
+}
+
+div.card:nth-child(2n) {
+	background-color: #cadb66;
+	color:#ffffff;
+		height: 500px;
+	width: 470px;
+	display: inline-block;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+    text-align: center ;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	overflow: hidden;
+}
+
+
+.header{
+	background-color: #401500;
+	color : #ffffff;
+}
+
+.button {
+  background-color: #683400; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

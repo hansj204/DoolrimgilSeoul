@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet" href="index.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=divice-width, intial-scale=1" /> 
+  <link rel="icon" href="img/forest.png">
+    <title>서울두드림길</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5fbc5b904c942d8bc12793184dc582d2"></script>
+</head>
+<body>
+
+<!--     서울 두드림길의 home을 담당하는 페이지 -->
+ <div data-role="page" id="page1">
+       <div data-role="header" style="background-color: #aeae5e; color : #ffffff;">
+			<p style="font-size: 40px;  text-align: center; font-weight: bold;">
+			<img src="img/forest.png" width="50" height="50">서울 두드림길
+			<img src="img/forest.png" width="50" height="50"></p>
+            <div data-role="navbar">
+                <ul>
+                  	<li><a href="#page1" data-direction="reverse">HOME</a></li>
+					<li><a href="#page2">서울 두드림길?</a></li>
+					<li><a href="#page3">카테고리별 두드림길 검색</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content" align="center">
+				<img src="img/main.jpg" width="85%" height="700">
+        </div>
+    </div>
+    
+<!--     서울 두드림길을 소개하는 페이지 -->
+    <div data-role="page" id="page2">
+       <div data-role="header" style="background-color: #aeae5e; color : #ffffff;">
+			<p style="font-size: 40px;  text-align: center; font-weight: bold;">
+			<img src="img/forest.png" width="50" height="50">서울 두드림길
+			<img src="img/forest.png" width="50" height="50"></p>
+            <div data-role="navbar">
+                <ul>
+                  	<li><a href="#page1" data-direction="reverse">HOME</a></li>
+					<li><a href="#page2">서울 두드림길?</a></li>
+					<li><a href="#page3">카테고리별 두드림길 검색</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div data-role="content" align="center">
+        	<h1>서울 두드림길이란?</h1>
+            <h2> 서울의 아름다운 생태, 역사, 문화자원을 천천히 걸으면서 느끼고 배우고 <br>체험할 수 있는 도보중심의 길로서 도심에서 ‘자연의 느림과 여유’를 만끽할 수 있는 코스입니다. </h2>
+            <br><br>  <br><br>
+            <table border="3">
+				<tr align="center">
+					<td><img src="img/img_guide02.jpg" width="500" height="400"></td>
+					<td><h1>생태문화길</h1><h3>주민 및 트래킹 전문가가 참여하여 서울시의 역사, 문화, 생태자원이<br> 잘 연계된 걷기 좋은 코스를 선정한 것으로 서울 전역에 걸쳐 <br>접근성이 용이하고 경관이 우수한 코스들로 구성되어 있습니다. </h3></td>
+				</tr>
+				<tr align="center">
+					<td><img src="img/img_guide03.jpg" width="500" height="400"></td>
+					<td><h1>근교산자락길</h1><h3>주택가 주변 풍경이 아름다운 곳에 경사가 완만한 등산로를 조성하여<br> 노약자 및 가족단위의 등산편익을 제공하고자 조성중인 길입니다.</h3></td>
+				</tr>
+				<tr align="center">
+					<td><img src="img/img_guide04.jpg" width="500" height="400"></td>
+					<td><h1>한양 도성길</h1><h3>서울의 내·외사산을 연결하는 순환코스를 정비하여<br> 서울의 역사, 문화, 자연생태를 탐방할 수 있는 네트워크를 구축하였고,<br>2014년 11월에 완공 된 서울의 대표적인 길입니다. </h3></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><h1>한강지천길/계절길</h1><h3>낙산 구간, 남산 구간, 백악 구간, 숭례문 구간, 인왕산 구간, 흥인지문 구간이 있다.</h3></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+
+	
+        </div>
+    </div>
+
+<!--     서울 두드림길을 검색할 수 있는 페이지 -->
+	<div data-role="page" id="page3">
+		<div data-role="header" style="background-color: #aeae5e; color : #ffffff;">
+			<p style="font-size: 40px;  text-align: center; font-weight: bold;">
+			<img src="img/forest.png" width="50" height="50">서울 두드림길
+			<img src="img/forest.png" width="50" height="50"></p>
+		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" data-direction="reverse">HOME</a></li>
+					<li><a href="#page2">서울 두드림길?</a></li>
+					<li><a href="#page3">카테고리별 두드림길 검색</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content"  align="center">
+		
+			<table width="80%">
+				<tr>
+					<td width="60%" style="padding: 20px;">
+					<select id="road"><!-- 검색을 위한 카테고리를 선택  -->
+							<option value="0" selected>코스 선택</option>
+							<option value="1">생태문화길</option>
+							<option value="3">근교산자락길</option>
+							<option value="4">한양도성길</option>
+							<option value="5">한강지천길/계절길</option>
+					</select></td>
+					<td width="5%" style="padding: 20px;"><input id="search" type="button"
+						onclick="javascript:search();" value="검색" style="background-color : #401500;" /></td>
+				</tr>
+			</table>
+			<div align="center">
+				<div id="map" style="width:80%;height:450px; margin: 10px;"></div>
+				<div id="roads"></div>
+				<table width="70%">
+					<tr>
+						<td><input type="button" onclick="javascript:first();"
+							value="처음으로" /></td>
+						<td><input type="button" onclick="javascript:previous();"
+							value=" <<" /></td>
+						<td><input type="button" onclick="javascript:next();"
+							value=" >>" /></td>
+						<td><input type="button" onclick="javascript:finish();"
+							value="마지막으로" /></td>
+					</tr>
+				</table>
+			</div>
+			
+		</div>
+	</div>
+	
+
+</body>
+</html>
